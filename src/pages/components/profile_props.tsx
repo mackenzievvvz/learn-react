@@ -1,6 +1,6 @@
 import { AvatarProps } from "@/types/avatar";
 
-function Avatar({ person, size = 100 }: AvatarProps) {
+export default function Avatar({ person, size = 100 }: AvatarProps) {
   return (
     <img
       className="avatar"
@@ -12,7 +12,7 @@ function Avatar({ person, size = 100 }: AvatarProps) {
   );
 }
 
-export default function Profile() {
+export function Profile() {
   return (
     <div>
         <Avatar
