@@ -1,3 +1,5 @@
+import Avatar from '../components/profile_props';
+
 export const people = [{
   id: 0,
   name: 'Creola Katherine Johnson',
@@ -17,7 +19,13 @@ function getImageUrl(imageId: string) {
 }
 export default function List() {
   const listItems = people.map(person =>
-    <li>
+    <li key={person.id + person.name}>
+      <Avatar
+        person={{ name: person.name, imageId: person.imageId}}
+        size={70} />
+      <h2>{person.name}</h2>
+      <p>{person.profession}</p>
+      <p>{person.accomplishment}</p>
     </li>
   );
   return <ul>{listItems}</ul>;
