@@ -5,11 +5,13 @@
 import Profile from './components/profile'
 import Gallery from './qcomps/gallery_props'
 import List from './qcomps/list_keys_id'
+import RecipeList from './qcomps/recipes'
 
 export default function Home() {
   return (
     // <Profile />
     // <Gallery />
-    <List />
+    // <List />
+    <RecipeList/>
   )
 }
