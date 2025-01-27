@@ -5,9 +5,10 @@
 // import Profile from './components/profile'
 // import Gallery from './qcomps/state'
 import Form from './qcomps/stuckForm'
+import RequestTracker from './qcomps/shoppingCart'
 
 export default function Home() {
   return (
-    <Form />
+    <RequestTracker />
   )
 }
