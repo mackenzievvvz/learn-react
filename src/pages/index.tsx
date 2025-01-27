@@ -3,9 +3,10 @@
 // import { Inter } from 'next/font/google'
 // import styles from '@/styles/Home.module.css'
 import Profile from './components/profile'
+import Gallery from './qcomps/state.tsx'
 
 export default function Home() {
   return (
-    <Profile />
+    <Gallery />
   )
 }

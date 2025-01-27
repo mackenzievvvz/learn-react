@@ -9,6 +9,7 @@ import { sculptureList } from '../../data/data';
 export default function Gallery() {
   /**
    * The index state variable keeps track of the current sculpture to display.
+   * setIndex is the handler for changing the index state variable.
    */
   const [index, setIndex] = useState(0);
   /**
@@ -20,7 +21,11 @@ export default function Gallery() {
    * The handleNextClick function increments the index state variable to display the next sculpture.
    */
   function handleNextClick() {
-    setIndex(index + 1);
+    if (index === sculptureList.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
   }
 
   /**
