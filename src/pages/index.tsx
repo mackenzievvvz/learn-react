@@ -2,11 +2,12 @@
 // import Image from 'next/image'
 // import { Inter } from 'next/font/google'
 // import styles from '@/styles/Home.module.css'
-import Profile from './components/profile'
-import Gallery from './qcomps/state.tsx'
+// import Profile from './components/profile'
+// import Gallery from './qcomps/state'
+import Form from './qcomps/stuckForm'
 
 export default function Home() {
   return (
-    <Gallery />
+    <Form />
   )
 }
