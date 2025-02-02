@@ -13,7 +13,10 @@ export default function Scoreboard() {
   });
 
   function handlePlusClick() {
-    player.likescore++;
+    // player.likescore++;
+    // const nextArtwork = { ...person.artwork, city: e.target.value };
+    const nexPlayer = { ...player, likescore: player.likescore + 1 };
+    setPlayer(nexPlayer);
   }
 
   function handleFirstNameChange(e: { target: { value: string; }; }) {
@@ -25,6 +28,7 @@ export default function Scoreboard() {
 
   function handleLastNameChange(e: { target: { value: string; }; }) {
     player.lastName = e.target.value;
+    setPlayer({ ...player, lastName: e.target.value });
   }
 
   return (

@@ -6,9 +6,10 @@
 // import Gallery from './qcomps/state'
 import Form from './qcomps/stuckForm'
 import RequestTracker from './qcomps/shoppingCart'
+import Scoreboard from './qcomps/updObjectsForm'
 
 export default function Home() {
   return (
-    <RequestTracker />
+    <Scoreboard />
   )
 }
