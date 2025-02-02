@@ -27,6 +27,7 @@ export default function BucketList() {
   function handleToggleMyList(artworkId: number, nextSeen: boolean) {
     const tmpList = myList.map(e => {
         if (e.id === artworkId) {
+            return {...e, seen : nextSeen}
             e.seen = nextSeen
         }
         return e
@@ -40,8 +41,9 @@ export default function BucketList() {
    * @param nextSeen - the value with which to update the seen property of the artwork
    */
   function handleToggleYourList(artworkId: number, nextSeen: boolean) {
-    const tmpList = yourList.map(e => {
+    const tmpList = yourList.slice().map(e => {
         if (e.id === artworkId) {
+          return {...e, seen : nextSeen}
             e.seen = nextSeen
         }
         return e

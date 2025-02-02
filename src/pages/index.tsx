@@ -7,9 +7,10 @@
 import Form from './qcomps/stuckForm'
 import RequestTracker from './qcomps/shoppingCart'
 import Scoreboard from './qcomps/updObjectsForm'
+import BucketList from './qcomps/arrObj'
 
 export default function Home() {
   return (
-    <Scoreboard />
+    <BucketList />
   )
 }
